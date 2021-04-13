@@ -17,10 +17,10 @@ $('.partners-logos').slick({
     infinite: true,
   });
 
-function openLogin(){
+$('#loginBtn').click(function(){
   $('.login-page').toggleClass('login-panel-show');
   $('#loginBtn').toggleClass('login-btn-hide'); 
-}
+});
 
 
   $('.container').click(function(){
