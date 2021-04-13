@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sprint2</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+   
+    <script
+      src="https://kit.fontawesome.com/e896da0d67.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <div id="loginID" class="login-page">
+      <form>
+        <input id="loginMail" type="text" placeholder="E-mail" name="e-mail">
+        <input id="loginPassword" type="password" placeholder="Password" name="password">
+        <div class="checkbox">
+          <input type="checkbox">
+          <label> Remember me</label>
+        </div>
+        <button type="button" onclick="login(this.form)">Login</button>
+      </form>
+      
+   </div>
+    
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-1" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-left active" aria-current="page" a href="#" onclick="alert('You are already in Homepage :)')">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link hvr-underline-from-left" href="feedbacks.html">Feedbacks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-left" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <button type="button" id="loginBtn" class="btn btn-primary" onclick="openLogin()">
+              <i class="far fa-user"></i> Login
+            </button>
+          </div>
+          
+        </nav>
+      </header>
+
+      <div class="mission row justify-content-between">
+         <div class="left-mission col-md-5">
+            <h1>Lorem Morem</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+              maiores in odit, quia consectetur nemo temporibus mollitia
+              perspiciatis debitis iusto ad quae, enim incidunt qui beatae quasi?
+              Facere magnam, eius voluptas, magni aliquam possimus non perferendis
+              est, repellendus deserunt ex consectetur quam id laboriosam tempore
+              voluptatum quaerat. Voluptatem repellat sint dolores, voluptas illo
+              maxime distinctio, harum odit.
+            </p>
+         </div>
+         <div class="right-mission col-md-5">
+            <img src="images/uidesign.svg"></img>
+         </div>
+      </div>
+
+      <div class="why-feedbacks row justify-content-md-center">
+        <h2 class="text-center">Why feedbacks important?</h2>
+        <p class="col-md-8 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati et ipsam laboriosam sequi. Consequatur praesentium labore iure, aut quae totam excepturi a reprehenderit placeat illo perspiciatis, laudantium dolores aperiam magni autem! Adipisci, vero ipsa! Dignissimos perferendis debitis beatae iure. Vitae possimus eaque odit? Numquam officiis praesentium sint maxime nihil enim quis minus laboriosam asperiores qui repudiandae quisquam minima quod, quibusdam assumenda deleniti, ratione odio, sunt aliquid rem! Quos in illum ut et expedita !</p>
+      </div>
+
+      <div class="our-partner">
+        <h3 class="text-center">Our Partnership</h3>
+        <div class="partners-logos">
+          <img src="images/Google-Logo.png" alt="google-logo">
+          <img src="images/Google-Logo.png" alt="google-logo">
+          <img src="images/Google-Logo.png" alt="google-logo">
+          <img src="images/Google-Logo.png" alt="google-logo">
+          <img src="images/Google-Logo.png" alt="google-logo">
+          <img src="images/Google-Logo.png" alt="google-logo">
+          <img src="images/Google-Logo.png" alt="google-logo">
+        </div>
+      </div>
+
+      <footer class="row offset-2">
+        <div class="sitemap col-md-5">
+          <h5 class="text-center">Sitemap</h5>
+          <ul>
+            <li><a href="" onclick="alert('You are already in Homepage :)')">Homepage</a></li>
+            <li><a href="#">Staff Performance</a></li>
+            <li><a href="#">Feedbacks</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <h5 class="text-center">Contact Us</h5>
+          <ul>
+            <li ><i class="far fa-envelope" ></i><a href="mailto:someone@example.com"> berkay.krtll.06@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> +90 507 507 0000</li>
+            <li><i class="fas fa-home"></i> Ankara, Turkey</li>
+            <li class="social-medias">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-pinterest"></i>
+             </li>
+          </ul>
+        </div>
+        <div class="copyright col-md-8 offset-2">
+          <p>Copyright &copy; 2021 All rights reserved by <a href="https://www.linkedin.com/in/berkay-k%C4%B1rt%C4%B1ll%C4%B1-22486616b/">Berkay Kırtıllı</a>.</p>
+        </div>
+      </footer>
+    </div>
+    
+  
+    
+    
+    <!--These 2 scripts below, about bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--slick-carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--skrollr.js-->
+    <script type="text/javascript" src="js/skrollr.js"></script>
+	  <script type="text/javascript">
+  	var s = skrollr.init();
+  	</script>
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

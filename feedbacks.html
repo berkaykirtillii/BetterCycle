@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sprint2</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+   
+    <script
+      src="https://kit.fontawesome.com/e896da0d67.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <div id="loginID" class="login-page">
+      <form>
+        <input id="loginMail" type="text" placeholder="E-mail">
+        <input id="loginPassword" type="password" placeholder="Password">
+        <div class="checkbox">
+          <input type="checkbox">
+          <label> Remember me</label>
+        </div>
+        <button type="submit" >Login</button>
+      </form>
+      
+   </div>
+    
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-1" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-left "  a href="index.html" >Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link hvr-underline-from-left active" aria-current="page" href="#" onclick="alert('You are already in Feedbacks page :)')">Feedbacks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-left" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <button type="button" id="loginBtn" class="btn btn-primary" onclick="openLogin()">
+              <i class="far fa-user"></i> Login
+            </button>
+          </div>
+          
+        </nav>
+      </header>
+
+      <div>
+       
+      </div>
+
+      <footer class="row offset-2">
+        <div class="sitemap col-md-5">
+          <h5 class="text-center">Sitemap</h5>
+          <ul>
+            <li><a href="" onclick="alert('You are already in Homepage :)')">Homepage</a></li>
+            <li><a href="#">Staff Performance</a></li>
+            <li><a href="#">Feedbacks</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <h5 class="text-center">Contact Us</h5>
+          <ul>
+            <li ><i class="far fa-envelope" ></i><a href="mailto:someone@example.com"> berkay.krtll.06@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> +90 507 507 0000</li>
+            <li><i class="fas fa-home"></i> Ankara, Turkey</li>
+            <li class="social-medias">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-pinterest"></i>
+             </li>
+          </ul>
+        </div>
+        <div class="copyright col-md-8 offset-2">
+          <p>Copyright &copy; 2021 All rights reserved by <a href="https://www.linkedin.com/in/berkay-k%C4%B1rt%C4%B1ll%C4%B1-22486616b/">Berkay Kırtıllı</a>.</p>
+        </div>
+      </footer>
+    </div>
+    
+  
+    
+    
+    <!--These 2 scripts below, about bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--slick-carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--skrollr.js-->
+    <script type="text/javascript" src="js/skrollr.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
