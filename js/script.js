@@ -1,6 +1,6 @@
 function login(form){
   if(form.loginMail.value=="user12@gmail.com" && form.loginPassword.value=="qwerty"){
-    window.open("index2.html","_self")
+    window.open("profile.html","_self")
   }
   else{
     alert("The username and password dont match!")
