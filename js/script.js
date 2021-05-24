@@ -1,3 +1,4 @@
+//login form
 function login(form){
   if(form.loginMail.value=="user12@gmail.com" && form.loginPassword.value=="qwerty"){
     window.open("profile.html","_self")
@@ -6,16 +7,6 @@ function login(form){
     alert("The username and password dont match!")
   }
 }
-
-$('.partners-logos').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: true,
-    autoplay:true,
-    autoplaySpeed: 1500,
-    infinite: true,
-  });
 
 $('#loginBtn').click(function(){
   $('.login-page').toggleClass('login-panel-show');
@@ -33,3 +24,24 @@ $('#loginBtn').click(function(){
   });
 
 
+//index.html partner logo slider
+$('.partners-logos').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  autoplay:true,
+  autoplaySpeed: 1500,
+  infinite: true,
+});
+
+
+//vote.html save button hover  
+$(".right-container-button").hover(function ()
+ {
+  $(".long-text").addClass("show-long-text");
+ },
+ function () {
+   $(".long-text").removeClass("show-long-text");
+ }
+);
