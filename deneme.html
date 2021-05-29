@@ -1,0 +1,74 @@
+<html>
+  <head>
+  	<title>Person Information</title>
+  	<meta charset="UTF-8"> 
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+                                    
+<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+                                    
+<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+ <style>
+      #slider2 .rs-handle {
+  background-color: #f3f3f3;
+  box-shadow: 0px 0px 4px 0px #000;
+}
+#slider2 .rs-tooltip-text {
+  font-size: 25px;
+  font-weight: bold;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    text-align: center;
+}
+  </style>
+  <script>
+      $("#slider1").roundSlider({
+    sliderType: "min-range",
+    value: 80,
+	  svgMode: true
+});
+
+$("#slider2").roundSlider({
+    sliderType: "min-range",
+    circleShape: "pie",
+    startAngle: "315",
+    lineCap: "round",
+    radius: 130,
+    width: 20,
+
+    min: -50,
+    max: 50,
+    
+    svgMode: true,
+	  pathColor: "#eee",
+	  borderWidth: 0,
+    
+	  startValue: 0,
+    
+    valueChange: function (e) {
+    	var color = e.isInvertedRange ? "#FF5722" : "#8BC34A";
+      
+      $("#slider2").roundSlider({ "rangeColor": color, "tooltipColor": color });
+    }
+});
+
+var sliderObj = $("#slider2").data("roundSlider");
+sliderObj.setValue(30);
+  </script>
+  </head>
+  <body>
+    <div class="row">
+        <div class="col">
+          <h3>Default slider</h3>
+          <div id="slider1"></div>
+        </div>
+        
+        <div class="col">
+          <h3>Slider with startValue</h3>
+          <div id="slider2"></div>
+        </div>
+      </div>
+  </body>
+</html>

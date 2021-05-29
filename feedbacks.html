@@ -3,19 +3,14 @@
   <head>
     <title>Sprint2</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabslet.css" />
+    <link rel="stylesheet" type="text/css" href="css/progresscircle.css">
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -26,8 +21,11 @@
       src="https://kit.fontawesome.com/e896da0d67.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
-  <body>
+  <body onload="chart()">
     <div class="container user-panel">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -79,14 +77,130 @@
           </div>
         </nav>
       </header>
-      <div class="col-md-10 offset-1 text-center">
-        <h2>Feedbacks are for you</h2>
-        <p>On this page, you can see your company's development in the last quarter and
-           its general performance average. In addition, you can find some tips on what
-           you can do to improve your low competencies. If you think these suggestions
-           are not useful to you. You can ask someone who is good at this to help you.</p>
-      </div>
 
+      <div class="col-md-10 offset-1 text-center">
+        <br/>
+        <h2>Feedbacks are for you</h2>
+        <br/>
+        <div class="tabs tabs_default">
+          <ul class="horizontal">
+            <li><a href="#rd-feedback">Research and Development</a></li>
+            <li><a href="#software-feedback">Software</a></li>
+            <li><a href="#marketing-feedback">Marketing</a></li>
+          </ul>
+          <br/>
+
+            <div id="rd-feedback">
+               <div class="row offset-2">
+                 <div class="circlechart" data-percentage="82">Coding</div>
+                 <div class="circlechart" data-percentage="74">Project Success</div>
+                 <div class="circlechart" data-percentage="89">Team Work</div>
+               </div>
+               <div class="row">
+                 <br/>
+                  <p class="text-center">
+                    The percentage charts shown are the average percentages of people
+                     working in the department. If your percentage of success in the 
+                     relevant field is average or below average. It is recommended 
+                     that you review the recommendations below.
+                  </p>
+                  <br/>
+               </div>
+               <div class="row">
+                 <br/>
+                 <h3> Coding</h3>
+                 <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+                 <br/>
+                </div>
+               <div class="row">
+                <br/>
+                <h3>Project Success</h3>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+                <br/>
+               </div>
+               <div class="row">
+                <br/>
+                <h3>Team Work</h3>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+                <br/>
+               </div>
+            </div>
+
+            <div id="software-feedback">
+              <div class="row offset-2">
+                 <div class="circlechart" data-percentage="88">jQuery</div>
+                 <div class="circlechart" data-percentage="86">Django</div>
+                 <div class="circlechart" data-percentage="71">.Net</div>
+              </div>
+              <div class="row">
+                <br/>
+                 <p class="text-center">
+                   The percentage charts shown are the average percentages of people
+                    working in the department. If your percentage of success in the 
+                    relevant field is average or below average. It is recommended 
+                    that you review the recommendations below.
+                 </p>
+                 <br/>
+              </div>
+              <div class="row">
+                <br/>
+                <h3> jQuery</h3>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+                <br/>
+               </div>
+              <div class="row">
+               <br/>
+               <h3>Django</h3>
+               <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+               <br/>
+              </div>
+              <div class="row">
+               <br/>
+               <h3>.Net</h3>
+               <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+               <br/>
+              </div>
+            </div>
+
+            <div id="marketing-feedback">
+              <div class="row offset-2">
+                 <div class="circlechart" data-percentage="82">Sales</div>
+                 <div class="circlechart" data-percentage="79">Completion</div>
+                 <div class="circlechart" data-percentage="76">Team Work</div>
+              </div>
+              <div class="row">
+                <br/>
+                 <p class="text-center">
+                   The percentage charts shown are the average percentages of people
+                    working in the department. If your percentage of success in the 
+                    relevant field is average or below average. It is recommended 
+                    that you review the recommendations below.
+                 </p>
+                 <br/>
+              </div>
+              <div class="row">
+                <br/>
+                <h3>Sales</h3>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+                <br/>
+               </div>
+              <div class="row">
+               <br/>
+               <h3>Completion</h3>
+               <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+               <br/>
+              </div>
+              <div class="row">
+               <br/>
+               <h3>Team Work</h3>
+               <p class="text-left">Lorem ipsum dolor sit amet consectetur, eaque sed? Eum nobis veritatis aspernatur rem, neque ut blanditiis laborum eveniet labore. Mollitia nisi dicta atque modi, nemo repellendus ullam aliquid saepe quod? Minima repellat reprehenderit ad a maxime mollitia illum culpa ipsam veritatis suscipit sed aut dolorem molestias, dolor, voluptate laboriosam!</p>
+               <br/>
+              </div>
+            </div>
+          
+          
+        </div>
+      </div>
     </div>
 
     <!--These 2 scripts below, about bootstrap-->
@@ -102,8 +216,19 @@
     ></script>
     <!--jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--slick-carousel-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--circle progress-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/progresscircle.js"></script>
+    <!--tabslet-->
+    <script src="js/tabslet.js"></script>
+    <script src="js/jquery.tabslet.min.js"></script>
+
     <script type="text/javascript" src="js/script.js"></script>
+    
   </body>
 </html>

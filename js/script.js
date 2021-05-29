@@ -8,6 +8,7 @@ function login(form){
   }
 }
 
+//Login popup toggle
 $('#loginBtn').click(function(){
   $('.login-page').toggleClass('login-panel-show');
   $('#loginBtn').toggleClass('login-btn-hide'); 
@@ -37,11 +38,46 @@ $('.partners-logos').slick({
 
 
 //vote.html save button hover  
-$(".right-container-button").hover(function ()
+$('.right-container-button').hover(function ()
  {
-  $(".long-text").addClass("show-long-text");
+  $('.long-text').addClass('show-long-text');
  },
  function () {
-   $(".long-text").removeClass("show-long-text");
+   $('.long-text').removeClass('show-long-text');
  }
 );
+
+//autocomplete in performance.html
+function autoComp() {
+  var availableTags = [
+  "Berkay Kırtıllı",
+  "Ali Cem",
+  "Abdullah Gor",
+  "Kubilay Atasoy",
+  "Ceyhun Varol",
+  "Emrecan Kılıç",
+  "Berkan Arabacı",
+  "Veli Ozturk",
+  "Ceyda Baydas",
+  "Buse Kurtaran",
+  "Ebru Kaz",
+  "Selma Kurtarici",
+  "Ayse ",
+  "Fatma",
+  "Hayriye",
+  "Burak",
+  "Enes",
+  "Tarık"
+  ];
+  $( "#search-input" ).autocomplete({
+    source: availableTags
+  });
+}
+
+
+//circle progress bar
+function chart(){
+  $('.circlechart').circlechart(); 
+}
+
+
