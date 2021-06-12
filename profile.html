@@ -18,13 +18,15 @@
       src="https://kit.fontawesome.com/e896da0d67.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/json.js"></script>
   </head>
   <body>
     <div class="container user-panel">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">BetterCycle</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -78,13 +80,8 @@
           src="images/berkay.png"
           alt="Berkay Kırtıllı"
         />
-        <div class="card-body">
-          <h5 class="card-title text-center">Berkay KIRTILLI</h5>
-          <h6 class="text-center">CEO of ThisProject</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card-body" >
+          <div id="personal-info"></div>
           <ul>
             <li class="social-medias">
               <i class="fab fa-instagram-square"></i>
@@ -174,36 +171,28 @@
 
       <div class="comments">
         <h5>Comments</h5>
-        <div class="row">
+        <div class="row" id="comments-texts">
           <div class="col-md-5 offset-1">
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing. Voluptatem quidem.
-              <span>
-                <i id="like" class="fas fa-angle-double-up"><i id="likeCounter" class="text-normal">13</i></i>
-                <i id="dislike" class="fas fa-angle-double-down"><i id="dislikeCounter" class="text-normal">2</i></i>
-              </span>
-            </p>
+            <div class="comment">
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+               <span>
+                  <i id="like" class="fas fa-angle-double-up"><i id="likeCounter" class="text-normal">13</i></i>
+                  <i id="dislike" class="fas fa-angle-double-down"><i id="dislikeCounter" class="text-normal">2</i></i>
+                </span>
+            </div>
           </div>
           <div class="col-md-5">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptat quidem. 
-              <span>
-                <i id="like" class="fas fa-angle-double-up"><i id="likeCounter" class="text-normal">13</i></i>
-                <i id="dislike" class="fas fa-angle-double-down"><i id="dislikeCounter" class="text-normal">2</i></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 offset-3">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem sunt neque! Id.
-              <span>
-                <i id="like" class="fas fa-angle-double-up"><i id="likeCounter" class="text-normal">13</i></i>
-                <i id="dislike" class="fas fa-angle-double-down"><i id="dislikeCounter" class="text-normal">2</i></i>
-              </span>
-            </p>
+            <div class="comment">
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+               <span>
+                  <i id="like" class="fas fa-angle-double-up"><i id="likeCounter" class="text-normal">13</i></i>
+                  <i id="dislike" class="fas fa-angle-double-down"><i id="dislikeCounter" class="text-normal">2</i></i>
+                </span>
+            </div>
           </div>
         </div>
       </div>
-
+    </div>
     </div>
 
     <!--These 2 scripts below, about bootstrap-->

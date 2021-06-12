@@ -29,7 +29,7 @@ $('#loginBtn').click(function(){
 $('.partners-logos').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  dots: true,
+  dots: false,
   arrows: true,
   autoplay:true,
   autoplaySpeed: 1500,

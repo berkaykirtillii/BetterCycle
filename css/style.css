@@ -38,7 +38,7 @@ body {
   padding-top: 0;
 }
 .user-panel .collapse {
-  padding-left: 5% !important;
+  padding-left: 0% ;
 }
 header {
   padding-top: 2% !important;
@@ -104,6 +104,9 @@ footer .col-md-5 ul li a {
 .social-medias i {
   font-size: 25px;
   margin-right: 7px;
+}
+footer ul li a{
+  font-size:15px;
 }
 .fab {
   cursor: pointer;
@@ -377,35 +380,39 @@ tr .green {
 }
 .comments {
   margin-left: 15%;
+  padding-bottom:8%;
 }
 .comments h5 {
   font-weight: bold;
   text-align: center;
 }
-.comments p {
+.comment {
   padding: 5px;
   border: 2px dashed rgba(243, 106, 62, 0.53);
   border-radius: 15px;
+  margin-bottom:20px;
 }
-.comments p span {
-  float: right;
+.comment p{
+  margin-bottom:0;
+}
+.comment span {
   cursor: pointer;
   margin-right: 2%;
 }
-.comments p span i:first-child {
+.comment span i:first-child {
   width: 35px;
 }
-.comments p span i {
+.comment span i {
   color: #6b6b6b;
 }
-.comments p span #like:hover,
-.comments p span #like:hover #likeCounter {
+.comment  span #like:hover,
+.comment  span #like:hover #likeCounter {
   font-size: 17px;
   color: #34a853;
   transition: 0.5s;
 }
-.comments p span #dislike:hover,
-.comments p span #dislike:hover #dislikeCounter {
+.comment span #dislike:hover,
+.comment span #dislike:hover #dislikeCounter {
   font-size: 17px;
   color: #ea4437;
   transition: 0.5s;
@@ -559,4 +566,13 @@ ul {
     border-left: 4px solid #007bff;
     padding-left: 5px;
     padding-top: 5px;
+}
+#personal-info h5{
+  text-align:center;
+  font-size:18px;
+}
+#personal-info .title{
+  text-align:center;
+  font-size:14px;
+  color:gray;
 }
