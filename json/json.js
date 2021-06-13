@@ -15,9 +15,9 @@ $(document).ready(function() {
          
       function renderHTML(data){
           var htmlString="";    
-          htmlString+="<h5>" + data[0].name + "</h5>";
-          htmlString+="<p class='title'>" + data[0].title + "<p>";
-          htmlString+="<p>" + data[0].about + "</p>";
+          htmlString+="<h5>" + data[1].name + "</h5>";
+          htmlString+="<p class='title'>" + data[1].title + "<p>";
+          htmlString+="<p>" + data[1].about + "</p>";
           personalInfo.innerHTML = htmlString;    
           
           ourData = ""
