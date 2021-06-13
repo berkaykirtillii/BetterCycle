@@ -14,9 +14,9 @@ $(document).ready(function() {
          
       function renderHTML(data){
           var htmlString="";    
-          htmlString+="<h5>" + data[1].name + "</h5>";
-          htmlString+="<p class='title'>" + data[1].title + "<p>";
-          htmlString+="<p>" + data[1].about + "</p>";
+          htmlString+="<h5>" + data.name + "</h5>";
+          htmlString+="<p class='title'>" + data.title + "<p>";
+          htmlString+="<p>" + data.about + "</p>";
           personalInfo.innerHTML = htmlString;    
           
           ourData = ""
@@ -35,15 +35,17 @@ $(document).ready(function() {
       commentRequest.send();
 
       function renderCommentHTML(data){
+        var text = "";
            for(let i= 0; i< data.length ;i++){
-             var text = "";
+             
              text+= " <div class='col-md-5 offset-1'><p>" 
              + data[i].comment +"</p></div>";              
-              comText.innerHTML = text;
 
-              textData = ""
            
            }
+           comText.innerHTML = text;
+
+           textData = ""
       }
 
 
