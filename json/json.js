@@ -4,6 +4,7 @@ $(document).ready(function() {
       var personalInfo = document.getElementById("personal-info");
 
       var infoRequest= new XMLHttpRequest();
+      infoRequest.overrideMimeType("application/json");
       infoRequest.open("GET","cors-internal.php",true);
       infoRequest.onload=function(){
         var ourData = JSON.parse(infoRequest.responseText);
