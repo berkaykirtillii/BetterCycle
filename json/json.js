@@ -5,7 +5,7 @@ $(document).ready(function() {
 
       var infoRequest= new XMLHttpRequest();
       infoRequest.overrideMimeType("application/json");
-      infoRequest.open("GET","cors-internal.php",true);
+      infoRequest.open("GET","cors-internal.php");
       infoRequest.onload=function(){
         var ourData = JSON.parse(infoRequest.responseText);
       renderHTML(ourData);
