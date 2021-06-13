@@ -5,7 +5,7 @@ $(document).ready(function() {
 
       var infoRequest= new XMLHttpRequest();
       infoRequest.overrideMimeType("application/json");
-      infoRequest.open("GET","Allow-origin.php",true);
+      infoRequest.open("GET","allow-origin.php",true);
      
       infoRequest.onload=function(){
       var ourData=JSON.parse(infoRequest.responseText);
@@ -29,7 +29,7 @@ $(document).ready(function() {
       var commentsText = document.getElementById("comments-text");
 
       var commentsRequest = new XMLHttpRequest();
-      commentsRequest.open("GET","https://sprintberkay.herokuapp.com/json/personal-info.json",true);
+      commentsRequest.open("GET","https://sprintberkay.herokuapp.com/json/allow-origin.php",true);
 
       commentsRequest.onload=function(){
           var textData=JSON.parse(infoRequest.responseText);
