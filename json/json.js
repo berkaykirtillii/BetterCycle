@@ -21,5 +21,33 @@ $(document).ready(function() {
           
           ourData = ""
       }
+
+
+
+      var comText = document.getElementById('comments-texts');
+
+      var commentRequest= new XMLHttpRequest();
+      commentRequest.open("GET","cors-external.php",true);
+      commentRequest.onload=function(){
+      var textData = JSON.parse(commentRequest.responseText);
+      renderCommentHTML(textData);
+      };
+      commentRequest.send();
+
+      function renderCommentHTML(data){
+           for(let i= 0; i< data.length ;i++){
+             var text = "";
+             text+= "   <div class='col-md-5 offset-1'><p>" +data[1].comment +
+              " <span>  <i id='like' class='fas fa-angle-double-up'>" +
+              "<i id='likeCounter' class='text-normal'>13</i></i>" +
+              "<i id='dislike' class='fas fa-angle-double-down'>"+
+              "<i id='dislikeCounter' class='text-normal'>2</i></i>"+
+              "</span></p></div>";              
+              comText.innerHTML = text;
+           
+           }
+      }
+
+
   
   }); 
