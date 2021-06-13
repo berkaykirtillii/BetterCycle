@@ -31,7 +31,7 @@ $(document).ready(function() {
       commentsRequest.open("GET","https://sprintberkay.herokuapp.com/json/cors-external.php",true);
 
       commentsRequest.onload=function(){
-          var textData=JSON.parse(infoRequest.responseText);
+          var textData=JSON.parse(commentsRequest.responseText);
           renderCommentHTML(textData);
       };
 
