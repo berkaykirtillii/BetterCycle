@@ -5,7 +5,7 @@ $(document).ready(function() {
 
       var infoRequest= new XMLHttpRequest();
       infoRequest.overrideMimeType("application/json");
-      infoRequest.open("GET","json/allow-origin.php",true);
+      infoRequest.open("GET","allow-origin.php",true);
      
       infoRequest.onload=function(){
       var ourData=JSON.parse(infoRequest.responseText);
