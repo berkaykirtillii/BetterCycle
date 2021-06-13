@@ -6,7 +6,7 @@ $(document).ready(function() {
       var infoRequest= new XMLHttpRequest();
       infoRequest.open("GET","cors-internal.php",true);
       infoRequest.onload=function(){
-      var ourData = JSON.parse(infoRequest.responseText);
+        var ourData = JSON.parse(infoRequest.responseText);
       renderHTML(ourData);
       };
      
@@ -27,7 +27,7 @@ $(document).ready(function() {
       var comText = document.getElementById('comments-texts');
 
       var commentRequest= new XMLHttpRequest();
-      commentRequest.open("GET","cors-external.php",true);
+      commentRequest.open("GET","https://sprintberkay.herokuapp.com/json/cors-external.php",true);
       commentRequest.onload=function(){
       var textData = JSON.parse(commentRequest.responseText);
       renderCommentHTML(textData);
@@ -44,6 +44,8 @@ $(document).ready(function() {
               "<i id='dislikeCounter' class='text-normal'>2</i></i>"+
               "</span></p></div>";              
               comText.innerHTML = text;
+
+              textData = ""
            
            }
       }
